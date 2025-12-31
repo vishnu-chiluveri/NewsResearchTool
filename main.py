@@ -2,9 +2,7 @@ from langchain_groq import ChatGroq
 from  secret_key import GROQ_API_KEY
 import os
 import streamlit as st
-import pickle
 import time
-import langchain
 from langchain_classic.chains import RetrievalQAWithSourcesChain
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
@@ -61,10 +59,7 @@ if process_url_clicked:
   time.sleep(2)
   # Save the index to a folder named "my_faiss_index"
   vectorindex.save_local("my_faiss_index")
-  # DB_FAISS_PATH = "C:/Vishnu/Projects/NewsResearchTool/my_faiss_index/index.pkl"
 
-# query = main_placeholder.text_input("Question : ")
-# print("This is test-1")
 
 with st.form(key='question_form'):
     query = st.text_input("Question : ")
