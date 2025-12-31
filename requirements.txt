@@ -1,0 +1,33 @@
+# Base Frameworks
+streamlit
+langchain
+langchain-community
+langchain-core
+
+# Model Integrations
+langchain-openai
+langchain-groq
+
+# Data & Vector Stores
+faiss-cpu
+tiktoken
+unstructured
+python-magic
+python-magic-bin; platform_system == 'Windows'
+
+# Utilities
+python-dotenv
+
+# Main Framework
+langchain
+langchain-core
+
+# Modern Hugging Face Integrations (2025 Standard)
+langchain-huggingface
+
+# Supporting Libraries
+huggingface-hub
+transformers
+sentence-transformers
+accelerate
+torch
